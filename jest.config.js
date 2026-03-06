@@ -1,3 +1,7 @@
 export default {
-  testEnvironment: "node"
+  testEnvironment: "node",
+  setupFilesAfterEnv: ["<rootDir>/tests/setup.js"],
+  testEnvironmentVariables: {
+    NODE_ENV: 'test'
+  }
 };
